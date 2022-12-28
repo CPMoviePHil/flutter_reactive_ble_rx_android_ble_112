@@ -76,11 +76,7 @@ detekt {
 
 protobuf {
     protoc {
-        if (project.hasProperty('protoc_platform')) {
-            artifact = "com.google.protobuf:protoc:3.18.1:${protoc_platform}"
-        } else {
-            artifact = "com.google.protobuf:protoc:3.18.1"
-        }
+        artifact = 'com.google.protobuf:protoc:3.18.1'
     }
 
     generateProtoTasks {
